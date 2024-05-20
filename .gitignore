@@ -99,7 +99,7 @@ node
 .wireit
 
 # Vite
-dist
+
 
 # ESLint
 .eslintcache
