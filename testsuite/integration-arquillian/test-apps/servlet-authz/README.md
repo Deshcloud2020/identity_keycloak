@@ -1,6 +1,6 @@
 # About the Example Application
 
-This is a simple Servlet-based application that will introduce you to some of the main concepts around Keycloak Authorization Services.
+This is a simple Servlet-based application that will introduce you to some of the main concepts around DTidentity Authorization Services.
 
 For this application, users can be regular users, premium users or administrators, where:
 
@@ -8,20 +8,20 @@ For this application, users can be regular users, premium users or administrator
 * Premium users have access to the *premium area*
 * Administrators have access to the *administration area*
 
-In Keycloak, all the paths being protected are resources on the server.
+In DTidentity, all the paths being protected are resources on the server.
 
 This application will also show you how to create a dynamic menu with the permissions granted to an user.
 
 ## Create the Example Realm and a Resource Server
 
-Considering that your Keycloak Server is up and running, log in to the Keycloak Administration Console.
+Considering that your DTidentity Server is up and running, log in to the DTidentity Administration Console.
 
 Now, create a new realm based on the following configuration file:
 
     examples/authz/servlet-authz/servlet-authz-realm.json
     
 That will import a pre-configured realm with everything you need to run this example. For more details about how to import a realm 
-into Keycloak, check the Keycloak's reference documentation.
+into DTidentity, check the DTidentity's reference documentation.
 
 After importing that file, you'll have a new realm called ``servlet-authz``. 
 
@@ -47,7 +47,7 @@ Now, try to access the client application using the following URL:
 
     http://localhost:8080/servlet-authz-app
 
-If everything is correct, you will be redirect to Keycloak login page. You can login to the application with the following credentials:
+If everything is correct, you will be redirect to DTidentity login page. You can login to the application with the following credentials:
 
 * username: jdoe / password: jdoe
 * username: alice / password: alice

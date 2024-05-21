@@ -151,7 +151,7 @@ public class WelcomePageTest extends AbstractKeycloakTest {
         welcomePage.navigateTo();
         welcomePage.navigateToAdminConsole();
         // TODO PhantomJS is not loading the new admin console for some reason, so is not redirecting to the login page. It works with Chrome though.
-        Assert.assertEquals("Keycloak Administration Console", phantomJS.getTitle());
+        Assert.assertEquals("DTidentity Administration Console", phantomJS.getTitle());
     }
 
     @Test
@@ -159,7 +159,7 @@ public class WelcomePageTest extends AbstractKeycloakTest {
         welcomePage.navigateTo();
 
         String actualMessage = welcomePage.getWelcomeMessage();
-        String expectedMessage = suiteContext.getAuthServerInfo().isEAP() ? "Red Hat Single Sign-On" : "Keycloak";
+        String expectedMessage = suiteContext.getAuthServerInfo().isEAP() ? "Red Hat Single Sign-On" : "DTidentity";
 
         Assert.assertEquals("Welcome to " + expectedMessage, actualMessage);
     }
