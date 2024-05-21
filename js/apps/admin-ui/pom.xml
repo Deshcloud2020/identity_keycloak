@@ -13,8 +13,8 @@
 
     <artifactId>keycloak-admin-ui</artifactId>
 
-    <name>Keycloak Admin UI</name>
-    <description>The user inferface to administrate the Keycloak server.</description>
+    <name>DTidentity Admin UI</name>
+    <description>The user inferface to administrate the DTidentity server.</description>
 
     <profiles>
         <profile>
@@ -99,14 +99,14 @@
                             <value xml:space="preserve"><![CDATA[<link rel="icon" type="${properties.favIconType!"image/svg+xml"}" href="${resourceUrl}${properties.favIcon!"/favicon.svg"}" />]]></value>
                         </replacement>
                         <replacement>
-                            <token><![CDATA[<meta name="description" content="Web site to manage keycloak" />]]></token>
+                            <token><![CDATA[<meta name="description" content="Web site to manage DTidentity" />]]></token>
                             <value xml:space="preserve"><![CDATA[<meta name="description" content="${properties.description!"Web site to manage keycloak"}" />]]></value>
                         </replacement>
                         <replacement>
-                            <token><![CDATA[<title>Keycloak Administration UI</title>]]></token>
+                            <token><![CDATA[<title>DTidentity Administration UI</title>]]></token>
                             <value xml:space="preserve">
 <![CDATA[
-    <title>${properties.title!"Keycloak Administration UI"}</title>
+    <title>${properties.title!"DTidentity Administration UI"}</title>
     <script type="importmap">
       {
         "imports": {
