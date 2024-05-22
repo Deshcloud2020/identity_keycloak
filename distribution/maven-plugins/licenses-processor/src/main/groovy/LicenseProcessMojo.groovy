@@ -91,7 +91,7 @@ class LicenseProcessMojo extends AbstractMojo {
             InputStream input = this.class.getResourceAsStream("keycloak-licenses-common/licenses.xsl")
             transformer = TransformerFactory.newInstance().newTemplates(new StreamSource(input)).newTransformer()
         }
-        transformer.setParameter("productname", "Keycloak")
+        transformer.setParameter("productname", "DTidentity")
         transformer.setParameter("version", project.version)
         outputLicensesXmlFile.withInputStream() { inStream ->
             def input = new StreamSource(inStream)
