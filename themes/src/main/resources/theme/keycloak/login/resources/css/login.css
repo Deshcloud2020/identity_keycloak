@@ -83,8 +83,8 @@ button#kc-current-locale-link::after {
 div.kc-logo-text {
     background-image: url(../img/keycloak-logo-text.png);
     background-repeat: no-repeat;
-    height: 63px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
 }
 
